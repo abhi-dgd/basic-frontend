@@ -4,7 +4,10 @@
     <title>Color Flipper</title>
     <style>
     button {
-        border-radius: 10;
+        border-radius: 5px;
+        margin: 5px;
+        height: 50px;
+        width: 100px;
     }
     #red {
         background-color: red;
@@ -16,15 +19,16 @@
         background-color: blue;
     }
     #random {
-        background-color: yellow;
+        background-color: white;
     }
     </style>
 </head>
 <body>
     <h3>Color Flipper!</h3>
-    <button id="red">Red</button>
-    <button id="green">Green</button>
-    <button id="blue">Blue</button>
-    <button id="random">Random</button>
+    <button id="red" onclick="setBgColor('red')">Red</button>
+    <button id="green" onclick="setBgColor('green')">Green</button>
+    <button id="blue" onclick="setBgColor('blue')">Blue</button>
+    <button id="random" onclick="setBgRandom()">Random</button>
+    <script src="index.js"></script>
 </body>
 </html>
